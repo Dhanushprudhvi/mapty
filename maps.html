@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- font awesome icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- leaflet -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+      integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+      integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+      crossorigin=""
+    ></script>
+
+    <link rel="stylesheet" href="maps.css">
+  </head>
+  <body>
+    <div class="map_content">
+      <div class="map_content_location">
+        <i
+          class="fa-solid fa-location-dot map_content_location_icon"
+          style="font-size: 48px; color: rgb(13, 95, 37)"
+        ></i>
+        <span class="map_content_location_content">mapty</span>
+      </div>
+      <form class="form hide">
+        <label for="username" class="label">
+          <span class="key">name</span>
+          <input
+            type="text"
+            id="username"
+            class="key_value input"
+            placeholder="name..."
+            maxlength="25"
+            autocomplete="off"
+            required
+          />
+        </label>
+        <label for="gender" class="label">
+          <span class="key">Gender</span>
+          <select class="gender key_value select" id="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
+        </label>
+        <label for="city" class="label">
+          <span class="key">city</span>
+          <input
+            type="text"
+            id="city"
+            class="key_value input"
+            placeholder="city..."
+            maxlength="15"
+            autocomplete="off"
+            required
+          />
+        </label>
+        <label for="branch" class="label">
+          <span class="key">branch</span>
+          <select class="branch key_value select" id="branch">
+            <option value="IT">IT</option>
+            <option value="CSE">CSE</option>
+            <option value="ECE">ECE</option>
+            <option value="EEE">EEE</option>
+            <option value="MECH">MECH</option>
+            <option value="CIVIL">CIVIL</option>
+            <option value="CHEMICAL">CHEMICAL</option>
+            <option value="META">META</option>
+            <option value="MINING">MINING</option>
+          </select>
+          <input type="submit" class="submit" />
+        </label>
+      </form>
+
+      <!-- <div class="map_content_rendering">
+           <p class="rendering_person_name">Dhanush
+            <span>(25/12/2022)</span><p>
+           <div class="rendering_person_details">
+            <div class="icon">
+              <span>city</span>
+              <i class="fa-solid fa-city" style="color:rgb(52, 153, 226);"></i></div>
+            <div class="icon">
+              <span>gender</span>
+              <i class="fa-solid fa-person" style="color:rgb(228, 112, 159);"></i></div>
+           <div class="icon">
+              <span>gender</span>
+             <i class="fa-solid fa-person-dress" style="color:rgb(47, 203, 68);"></i></div> 
+             <div class="icon">
+               <span>degree</span>
+              <i class="fa-solid fa-graduation-cap" style="color:rgb(184, 204, 84);"></i></div>
+            </div>
+            <i class="fa-solid fa-trash-can delete" style="color:rgb(228, 64, 220);"></i>
+      </div> -->
+    </div>
+    <div id="map"></div>
+   <script src="maps.js"></script>
+  </body>
+</html>

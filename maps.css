@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "PT Serif", serif;
+  padding: 1rem;
+  margin: 0px;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 0.6fr 1fr;
+  box-sizing: border-box;
+}
+.map_content {
+  background-color: rgb(0, 0, 0);
+  opacity: 0.8;
+  color: white;
+  overflow-y: scroll;
+  /* overflow: scroll; */
+}
+.map_content::-webkit-scrollbar {
+  display: none;
+}
+.map_content_location {
+  text-align: center;
+  margin: 2rem 0;
+}
+.map_content_location_content {
+  font-size: 2.5rem;
+  vertical-align: top;
+}
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 0.3rem;
+  margin: 0.3rem 2rem;
+  height: 100px;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 2rem 2rem 1rem;
+  border-radius: 0.5rem;
+  transition: all 0.5s, transform 1ms, opacity 1ms;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.hide {
+  transform: translateY(-100px);
+  height: 0px;
+  margin: 0.3rem 2rem;
+  padding: 0 2rem;
+  opacity: 0;
+}
+.gender {
+  padding-left: 0.5rem;
+}
+.label {
+  display: grid;
+  grid-template-columns: 0.6fr 1fr;
+}
+.key {
+  margin: 0 0.5rem;
+}
+.key_value {
+  width: 120px;
+  box-sizing: border-box;
+}
+.submit {
+  display: none;
+}
+.map_content_rendering {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 1rem 2rem;
+  margin: 0.5rem 2rem;
+  border-radius: 0.5rem;
+  border-left: 10px solid rgb(8, 255, 255);
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+.rendering_person_name {
+  margin: 0 0 0.5rem;
+  font-size: 1.3rem;
+}
+.rendering_person_name span {
+  font-size: 0.8rem;
+  margin-left: 0.3rem;
+}
+.rendering_person_details {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1.5fr;
+  font-size: 0.9rem;
+}
+.delete{
+   position: absolute;
+   right :1rem;
+   top:0.5rem;
+}
+
